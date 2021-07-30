@@ -1,6 +1,8 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* COMMON ATTRIBUTES */
+
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +38,14 @@ header {
     font-size: 18px;
     font-weight: 600;
 }
+
+footer {
+    padding: 2em;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* MAIN PAGE */
 
 #about-me {
     color: white;
@@ -112,8 +122,28 @@ header {
     font-weight: 700;
 }
 
-footer {
-    padding: 2em;
+
+/* ALBUM PAGE */
+
+#album-heading {
+    font-size: 60px;
+    font-family: 700;
     text-align: center;
-    font-weight: 700;
+    padding: 5px;
 }
+
+#album-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 5em;
+    padding: 10px;
+    background-color: #EBDDEE;
+}
+
+#album-section img {
+    max-height: 550px;
+    max-width: 550px;
+    padding: 0.4em 0.6em;
+    
+}
+
