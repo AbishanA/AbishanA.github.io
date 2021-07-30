@@ -1,0 +1,119 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 15px 3em;
+    background-color: #D5D7D8;
+    margin: 2em 1em;
+}
+
+#logo {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+#nav-link {
+    list-style-type: none;
+}
+
+#nav-link li {
+    display: inline-block;
+    padding: 0.6em;
+}
+
+#nav-link li a {
+    text-decoration: none;
+    color: #9333D8;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#about-me {
+    color: white;
+    padding: 250px 250px;
+    background-image: url("../images/sunset-background.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#about-me h1 {
+    font-size: 60px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.bio {
+    font-size: 18px;
+}
+
+#about-me #rng {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+#album-preview {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+#album-preview img {
+    max-height: 550px;
+    max-width: 550px;
+    padding: 0 0.8em;
+}
+#album-preview a {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 2em;
+    color: #9333D8;
+    
+}
+
+#more-info {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 5em 0;
+    background-color: #D5D7D8;
+    z-index: 1;
+    position: relative;
+    margin: 5em 6em 0;
+    justify-content: space-around;
+    
+}
+
+#more-info:before {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+    
+}
+
+#more-info h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+    font-weight: 700;
+}
