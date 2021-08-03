@@ -143,7 +143,120 @@ footer {
 #album-section img {
     max-height: 550px;
     max-width: 550px;
-    padding: 0.4em 0.6em;
+    padding: 0.4em 0.4em;
     
 }
 
+/* CONTACT PAGE */
+
+#contact-info {
+    text-align: center;
+    margin-bottom: 37em;
+}
+
+#contact-info h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#contact-info #contact-me {
+    font-size: 18px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+    /* Main Page */
+    #about-me {
+        max-width: 90%;
+        padding: 10% 30%;
+    }
+
+    #about-me h1, .bio, #rng {
+        margin: 0 auto;
+    }
+    
+    #album-preview {
+        grid-template-columns: auto;
+    }
+
+    #album-preview img {
+        width: 95%;
+        height: auto;
+        padding: 10px 0;
+        margin: 0 auto;
+    }
+
+    #more-info {
+        grid-template-columns: auto;
+        padding: 40px;
+    }
+
+    #more-info h2, #more-info ul {
+        padding-bottom: 10px;
+    }
+
+    /* Album Page */
+    #album-heading {
+        font-size: 2.4em;
+        margin: 20px 0;
+    }
+
+    #album-section {
+        grid-template-columns: auto;
+        margin: 0 auto;
+    }
+
+    #album-section img {
+        width: 95%;
+        height: auto;
+        padding: 10px 0;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Main Page */
+    #about-me {
+        max-width: 90%;
+        padding: 20% 20%;
+    }
+
+    #about-me h1, .bio, #rng {
+        width: 90%;
+    }
+    
+    #album-preview {
+        grid-template-columns: auto;
+    }
+
+    #album-preview img {
+        padding: 10px 10px;
+        max-width: 700px;
+        max-height: 700px;
+    }
+
+    #more-info {
+        grid-template-columns: auto;
+        padding: 40px;
+    }
+
+    #more-info h2, #more-info ul {
+        padding-bottom: 10px;
+    }
+
+    /* Album Page */
+    #album-heading {
+        font-size: 2.4em;
+    }
+
+    #album-section {
+        grid-template-columns: auto;
+        margin: 10px auto;
+    }
+
+    #album-section img {
+        margin: 0 auto;
+        max-width: 700px;
+    }
+}
